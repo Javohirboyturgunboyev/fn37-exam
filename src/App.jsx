@@ -14,9 +14,9 @@ function App() {
      <Toaster position="top-right" reverseOrder={false} />
     <Layaut> 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Register />} />
         <Route path="/fullproduct/:id" element={<Fullproduct />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/karzinka" element={<Karzinka />} />
         <Route path="/statistika" element={<Statistika />} />
       </Routes>

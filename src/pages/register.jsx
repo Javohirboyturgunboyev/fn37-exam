@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import  { useState, useRef } from "react";
 
 export default function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -36,7 +36,7 @@ export default function App() {
 
     if (email && password) {
       if (email === savedEmail && password === savedPassword) {
-        window.location.href = "/home"; // yoki boshqa sahifa
+        window.location.href = "/home"; 
       } else {
         alert("Email yoki parol noto‘g‘ri.");
       }
@@ -48,7 +48,7 @@ export default function App() {
   return (
     <div className="mt-[150px] flex items-center justify-center">
       <div className="relative w-[350px] sm:w-[400px] h-[500px] bg-white rounded-xl overflow-hidden shadow-xl">
-        {/* Tabs */}
+ 
         <div className="flex">
           <button
             className={`w-1/2 py-3 font-semibold transition-all ${
@@ -68,14 +68,14 @@ export default function App() {
           </button>
         </div>
 
-        {/* Forms container */}
+       
         <div
           className={`absolute top-12 w-[200%] flex transition-transform duration-500 ease-in-out ${
             isLogin ? "-translate-x-1/2" : "translate-x-0"
           }`}
           style={{ height: "calc(100% - 48px)" }}
         >
-          {/* Signup */}
+        
           <form
             onSubmit={handleSignup}
             className="w-1/2 px-8 pt-10 pb-4 flex flex-col gap-4"
@@ -111,7 +111,7 @@ export default function App() {
             </button>
           </form>
 
-          {/* Login */}
+          
           <form
             onSubmit={handleLogin}
             className="w-1/2 px-8 pt-10 pb-4 flex flex-col gap-4"

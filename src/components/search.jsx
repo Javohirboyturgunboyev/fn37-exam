@@ -7,12 +7,11 @@ function Search({ onSearch }) {
     const newValue = e.target.value;
     setValue(newValue);
 
-  
     if (typeof onSearch === "function") {
       if (newValue.trim().length >= 3) {
         onSearch(newValue);
       } else {
-        onSearch(""); 
+        onSearch(""); // Bo'sh bo'lsa natijani tozalash
       }
     }
   };
